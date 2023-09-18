@@ -3,14 +3,7 @@ pipeline{
     stages{
         stage('git initialize'){
             steps{
-                sh "git init"
+                echo "working"
             }
         }
-        stage('git checkout'){
-            steps{
-                sh "git pull https://github.com/rahulbasani/JenkinsPractice.git"
-            }
-        }
-        
-    }
 }
